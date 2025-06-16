@@ -1,0 +1,32 @@
+Próba 1:
+Plik: dane
+--- Uruchomienie: 2025-06-16 15:08:20 ---
+Œrednia dok³adnoœæ kroswalidacji: 0.9000
+Dok³adnoœæ na zbiorze testowym: 1.0000
+Liczba foldów CV: 10
+------------------------------
+
+Próba 2:
+Plik: dane
+--- Uruchomienie: 2025-06-16 15:10:51 ---
+Œrednia dok³adnoœæ kroswalidacji: 0.9000
+Dok³adnoœæ na zbiorze testowym: 1.0000
+Liczba foldów CV: 10
+------------------------------
+
+Próba 3:
+Plik: dane2
+--- Uruchomienie: 2025-06-16 15:14:30 ---
+Œrednia dok³adnoœæ kroswalidacji: 0.9500
+Dok³adnoœæ na zbiorze testowym: 0.8571
+Liczba foldów CV: 10
+------------------------------
+
+Próba 4:
+Plik: dane3
+--- Uruchomienie: 2025-06-16 15:17:30 ---
+Œrednia dok³adnoœæ kroswalidacji: 0.9500
+Dok³adnoœæ na zbiorze testowym: 1.0000
+Liczba foldów CV: 10
+------------------------------
+
