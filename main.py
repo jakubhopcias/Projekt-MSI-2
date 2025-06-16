@@ -65,14 +65,14 @@ plt.ylabel("Rzeczywiste")
 plt.show()
 
 # 8. Wykres dokładności z kroswalidacji
-plt.figure(figsize=(10, 6)) # Ustawienie rozmiaru wykresu
+plt.figure(figsize=(10, 6))
 plt.plot(range(1, len(dokladnosci) + 1), dokladnosci, marker='o', linestyle='-')
-plt.title(f"Dokładność w kroswalidacji ({len(dokladnosci)}x)") # Zaktualizowany tytuł
+plt.title(f"Dokładność w kroswalidacji ({len(dokladnosci)}x)")
 plt.xlabel("Numer Folds")
 plt.ylabel("Dokładność")
-plt.grid(True) # Dodanie siatki dla lepszej czytelności
-plt.xticks(range(1, len(dokladnosci) + 1)) # Zapewnienie, że oś x pokazuje numery foldów
-plt.tight_layout() # Dopasowanie wykresu
+plt.grid(True) 
+plt.xticks(range(1, len(dokladnosci) + 1)) 
+plt.tight_layout() 
 plt.show()
 
 # --- Zapisywanie wyników do pliku ---
@@ -86,16 +86,13 @@ try:
         for line in f:
             if line.startswith("Próba "):
                 try:
-                    # Wyodrębnij numer z linii "Próba X:"
                     num_str = line.split(':')[0].split(' ')[1]
                     current_próba_num = int(num_str)
                     if current_próba_num >= next_experiment_number:
                         next_experiment_number = current_próba_num + 1
                 except (ValueError, IndexError):
-                    # Ignoruj źle sformatowane linie
                     pass
 except FileNotFoundError:
-    # Jeśli plik nie istnieje, zaczynamy od Próby 1
     pass
 
 # Pobierz aktualną datę i godzinę
